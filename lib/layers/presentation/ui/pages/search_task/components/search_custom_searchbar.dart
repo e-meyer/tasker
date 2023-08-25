@@ -108,7 +108,7 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
               showCalendarDatePicker2Dialog(
                 context: context,
                 config: config,
-                initialValue: initialValues,
+                value: initialValues,
                 dialogSize: const Size(325, 400),
                 borderRadius: BorderRadius.circular(15),
                 dialogBackgroundColor: kMainBackground,

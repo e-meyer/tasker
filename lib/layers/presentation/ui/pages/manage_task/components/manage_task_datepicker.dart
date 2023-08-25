@@ -85,7 +85,7 @@ class _ManageTaskDatepickerState extends State<ManageTaskDatepicker> {
               showCalendarDatePicker2Dialog(
                 context: context,
                 config: config,
-                initialValue: initialValues,
+                value: initialValues,
                 dialogSize: const Size(325, 400),
                 borderRadius: BorderRadius.circular(15),
                 dialogBackgroundColor: Colors.white,
