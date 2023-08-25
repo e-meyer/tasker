@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../../core/utils/constants.dart';
 
@@ -54,7 +53,7 @@ class _CustomAppBarWidgetState extends State<CustomAppBarWidget> {
       centerTitle: true,
       title: Text(
         widget.title,
-        style: GoogleFonts.poppins(
+        style: TextStyle(
           color: kPrimaryColor,
           fontWeight: FontWeight.w500,
           fontSize: 18,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import '../../../core/utils/constants.dart';
 
 class AddFirstTaskWidget extends StatelessWidget {
@@ -28,7 +28,7 @@ class AddFirstTaskWidget extends StatelessWidget {
               const SizedBox(height: 10),
               Text(
                 'Add your first task',
-                style: GoogleFonts.poppins(
+                style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
                   color: kMainBackground,

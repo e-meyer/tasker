@@ -1,5 +1,5 @@
 import 'package:flutter_svg/svg.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import 'package:tasker/layers/presentation/controllers/task_controller.dart';
 import 'package:tasker/layers/presentation/ui/pages/home/components/home_filter_dropdown.dart';
 import 'package:tasker/layers/presentation/ui/pages/home/components/home_task_list_builder.dart';
@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     Text(
                       'Tasks',
-                      style: GoogleFonts.poppins(
+                      style: TextStyle(
                         fontSize: 26,
                         color: kPrimaryColor,
                         fontWeight: FontWeight.w600,

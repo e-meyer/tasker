@@ -1,5 +1,5 @@
 import 'package:flutter_slidable/flutter_slidable.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import 'package:intl/intl.dart';
 import 'package:msh_checkbox/msh_checkbox.dart';
 import 'package:tasker/layers/core/injector/injector.dart';
@@ -128,7 +128,7 @@ class _TaskCardWidgetState extends State<TaskCardWidget>
                   children: [
                     Text(
                       widget.task.title.trim(),
-                      style: GoogleFonts.poppins(
+                      style: TextStyle(
                         color: kSecondaryColor,
                         fontWeight: FontWeight.w500,
                         fontSize: 16,
@@ -141,7 +141,7 @@ class _TaskCardWidgetState extends State<TaskCardWidget>
                           ..scale(animation.value, 1.0),
                         child: Text(
                           widget.task.title.trim(),
-                          style: GoogleFonts.poppins(
+                          style: TextStyle(
                             color: Colors.transparent,
                             fontWeight: FontWeight.w500,
                             fontSize: 16,
@@ -206,7 +206,7 @@ class _TaskCardWidgetState extends State<TaskCardWidget>
                                   : (!widget.task.isDone && difference >= 0)
                                       ? '$difference days left'
                                       : '${difference.toString().replaceAll('-', '')} days late',
-                      style: GoogleFonts.poppins(
+                      style: TextStyle(
                         color: kDarkGrey,
                         fontSize: 14,
                       ),
@@ -233,7 +233,7 @@ class _TaskCardWidgetState extends State<TaskCardWidget>
                           padding: const EdgeInsets.fromLTRB(20, 0, 20, 12),
                           child: Text(
                             widget.task.description.trim(),
-                            style: GoogleFonts.poppins(
+                            style: TextStyle(
                               color: kSecondaryColor,
                               fontSize: 14,
                             ),
@@ -269,7 +269,7 @@ class _TaskCardWidgetState extends State<TaskCardWidget>
           ),
           title: Text(
             'Delete Task',
-            style: GoogleFonts.poppins(
+            style: TextStyle(
               fontSize: 22,
               color: kSecondaryColor,
               fontWeight: FontWeight.w700,
@@ -285,7 +285,7 @@ class _TaskCardWidgetState extends State<TaskCardWidget>
                 padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
                 child: Text(
                   'Are you sure you want to delete this task? This action can\'t be undone.',
-                  style: GoogleFonts.poppins(
+                  style: TextStyle(
                     fontSize: 18,
                     color: kSecondaryColor,
                   ),
@@ -309,7 +309,7 @@ class _TaskCardWidgetState extends State<TaskCardWidget>
                         ),
                         child: Text(
                           'NO',
-                          style: GoogleFonts.poppins(
+                          style: TextStyle(
                             fontSize: 18,
                             color: kMainBackground,
                             fontWeight: FontWeight.w700,
@@ -333,7 +333,7 @@ class _TaskCardWidgetState extends State<TaskCardWidget>
                         ),
                         child: Text(
                           'YES',
-                          style: GoogleFonts.poppins(
+                          style: TextStyle(
                             fontSize: 18,
                             color: kMainBackground,
                             fontWeight: FontWeight.w700,

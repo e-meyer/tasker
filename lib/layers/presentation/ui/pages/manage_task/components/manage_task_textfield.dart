@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../../core/utils/constants.dart';
 
@@ -25,7 +24,7 @@ class ManageTaskTextfieldState extends State<ManageTaskTextfield> {
       children: [
         Text(
           widget.labelText,
-          style: GoogleFonts.poppins(
+          style: TextStyle(
             color: kDarkGrey,
             fontSize: 14,
           ),
@@ -40,7 +39,7 @@ class ManageTaskTextfieldState extends State<ManageTaskTextfield> {
           },
           cursorColor: kPrimaryColor,
           controller: widget.controller,
-          style: GoogleFonts.poppins(
+          style: TextStyle(
             fontSize: 18,
             color: kSecondaryColor,
             fontWeight: FontWeight.w500,
@@ -54,7 +53,7 @@ class ManageTaskTextfieldState extends State<ManageTaskTextfield> {
                 color: kPrimaryColor,
               ),
             ),
-            errorStyle: GoogleFonts.poppins(),
+            errorStyle: TextStyle(),
             errorBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(16),
               borderSide: const BorderSide(

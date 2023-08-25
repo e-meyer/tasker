@@ -1,7 +1,7 @@
 import 'package:calendar_date_picker2/calendar_date_picker2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import 'package:intl/intl.dart';
 import 'package:tasker/layers/core/utils/constants.dart';
 
@@ -22,25 +22,25 @@ class ManageTaskDatepicker extends StatefulWidget {
 class _ManageTaskDatepickerState extends State<ManageTaskDatepicker> {
   final config = CalendarDatePicker2WithActionButtonsConfig(
     calendarType: CalendarDatePicker2Type.single,
-    dayTextStyle: GoogleFonts.poppins(
+    dayTextStyle: TextStyle(
       fontSize: 14,
     ),
-    weekdayLabelTextStyle: GoogleFonts.poppins(
+    weekdayLabelTextStyle: TextStyle(
       fontSize: 14,
       fontWeight: FontWeight.w600,
       color: kSecondaryColor,
     ),
-    selectedDayTextStyle: GoogleFonts.poppins(
+    selectedDayTextStyle: TextStyle(
       fontSize: 14,
       color: kMainBackground,
       fontWeight: FontWeight.w600,
     ),
     selectedDayHighlightColor: kPrimaryColor,
     closeDialogOnCancelTapped: true,
-    cancelButtonTextStyle: GoogleFonts.poppins(
+    cancelButtonTextStyle: TextStyle(
       fontWeight: FontWeight.w600,
     ),
-    okButtonTextStyle: GoogleFonts.poppins(
+    okButtonTextStyle: TextStyle(
       fontWeight: FontWeight.w600,
     ),
   );
@@ -57,7 +57,7 @@ class _ManageTaskDatepickerState extends State<ManageTaskDatepicker> {
           children: [
             Text(
               '${DateFormat("MMMM").format(widget.dateTime)}, ${widget.dateTime.day}',
-              style: GoogleFonts.poppins(
+              style: TextStyle(
                 fontWeight: FontWeight.w600,
                 color: kPrimaryColor,
                 fontSize: 28,
@@ -65,7 +65,7 @@ class _ManageTaskDatepickerState extends State<ManageTaskDatepicker> {
             ),
             Text(
               '${widget.dateTime.year}',
-              style: GoogleFonts.poppins(
+              style: TextStyle(
                 fontWeight: FontWeight.w400,
                 color: kDarkGrey,
                 fontSize: 20,

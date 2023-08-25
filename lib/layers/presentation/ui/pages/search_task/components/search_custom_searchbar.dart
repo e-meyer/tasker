@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import 'package:calendar_date_picker2/calendar_date_picker2.dart';
 import 'package:tasker/layers/presentation/ui/pages/search_task/components/search_current_filter_range.dart';
@@ -25,25 +24,25 @@ class CustomSearchBar extends StatefulWidget {
 class _CustomSearchBarState extends State<CustomSearchBar> {
   final config = CalendarDatePicker2WithActionButtonsConfig(
     calendarType: CalendarDatePicker2Type.range,
-    dayTextStyle: GoogleFonts.poppins(
+    dayTextStyle: TextStyle(
       fontSize: 14,
     ),
-    weekdayLabelTextStyle: GoogleFonts.poppins(
+    weekdayLabelTextStyle: TextStyle(
       fontSize: 14,
       fontWeight: FontWeight.w600,
       color: kSecondaryColor,
     ),
-    selectedDayTextStyle: GoogleFonts.poppins(
+    selectedDayTextStyle: TextStyle(
       fontSize: 14,
       color: kMainBackground,
       fontWeight: FontWeight.w600,
     ),
     selectedDayHighlightColor: kPrimaryColor,
     closeDialogOnCancelTapped: true,
-    cancelButtonTextStyle: GoogleFonts.poppins(
+    cancelButtonTextStyle: TextStyle(
       fontWeight: FontWeight.w600,
     ),
-    okButtonTextStyle: GoogleFonts.poppins(
+    okButtonTextStyle: TextStyle(
       fontWeight: FontWeight.w600,
     ),
   );
@@ -62,7 +61,7 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
             onChanged: (string) => widget.refresh(string,
                 firstDate: widget.startDate, secondDate: widget.endDate),
             cursorColor: kPrimaryColor,
-            style: GoogleFonts.poppins(
+            style: TextStyle(
               fontSize: 16,
               color: kSecondaryColor,
               fontWeight: FontWeight.w600,
@@ -75,7 +74,7 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
                 ),
               ),
               hintText: 'Search for a title',
-              hintStyle: GoogleFonts.poppins(
+              hintStyle: TextStyle(
                 color: kDarkGrey,
                 fontSize: 16,
               ),

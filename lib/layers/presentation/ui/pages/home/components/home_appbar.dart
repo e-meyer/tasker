@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import 'package:intl/intl.dart';
 
 import '../../../../../core/utils/constants.dart';
@@ -39,7 +39,7 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
           ),
           Text(
             '${DateFormat('EEEE').format(DateTime.now())}, ${DateFormat('d').format(DateTime.now())}',
-            style: GoogleFonts.poppins(
+            style: TextStyle(
               color: kSecondaryColor,
               fontWeight: FontWeight.w600,
               fontSize: 18,

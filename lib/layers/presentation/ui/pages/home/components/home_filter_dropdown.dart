@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../../core/utils/constants.dart';
 import 'home_filter_bottom_sheet.dart';
@@ -49,7 +48,7 @@ class HomeFilterDropdownState extends State<HomeFilterDropdown> {
             children: [
               Text(
                 dropdownItems[widget.currentIndex],
-                style: GoogleFonts.poppins(
+                style: TextStyle(
                   fontSize: 16,
                   color: kMainBackground,
                 ),
@@ -146,7 +145,7 @@ class HomeFilterDropdownState extends State<HomeFilterDropdown> {
                   horizontal: 16.0,
                 ),
                 child: DefaultTextStyle(
-                  style: GoogleFonts.poppins(
+                  style: TextStyle(
                     color: kSecondaryColor,
                     fontSize: 18,
                     fontWeight: FontWeight.w500,

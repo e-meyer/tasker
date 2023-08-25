@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:tasker/layers/core/injector/injector.dart';
 import 'package:tasker/layers/core/utils/constants.dart';
 import 'package:tasker/layers/domain/entities/task_entity.dart';
@@ -111,7 +110,7 @@ class _ManageTaskPageState extends State<ManageTaskPage> {
                     },
                     child: Text(
                       isEditing ? 'Save Task' : 'Create Task',
-                      style: GoogleFonts.poppins(
+                      style: TextStyle(
                         fontWeight: FontWeight.w500,
                         fontSize: 16,
                       ),
@@ -131,7 +130,7 @@ class _ManageTaskPageState extends State<ManageTaskPage> {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       content: Text(
         isEditing ? 'Task saved successfully' : 'Task created successfully',
-        style: GoogleFonts.poppins(
+        style: TextStyle(
           fontWeight: FontWeight.w500,
           fontSize: 16,
         ),
@@ -156,7 +155,7 @@ class _ManageTaskPageState extends State<ManageTaskPage> {
           ),
           title: Text(
             'Task already exists',
-            style: GoogleFonts.poppins(
+            style: TextStyle(
               fontSize: 22,
               color: kSecondaryColor,
               fontWeight: FontWeight.w700,
@@ -172,7 +171,7 @@ class _ManageTaskPageState extends State<ManageTaskPage> {
                 padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
                 child: Text(
                   'The title of the given task already exists. Please choose another title.',
-                  style: GoogleFonts.poppins(
+                  style: TextStyle(
                     fontSize: 18,
                     color: kSecondaryColor,
                   ),
@@ -193,7 +192,7 @@ class _ManageTaskPageState extends State<ManageTaskPage> {
                   ),
                   child: Text(
                     'OK',
-                    style: GoogleFonts.poppins(
+                    style: TextStyle(
                       fontSize: 18,
                       color: kMainBackground,
                       fontWeight: FontWeight.w700,

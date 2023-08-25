@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import 'package:intl/intl.dart';
 
 class CurrentFilterRange extends StatelessWidget {
@@ -20,14 +20,14 @@ class CurrentFilterRange extends StatelessWidget {
         RichText(
           text: TextSpan(
             text: 'from ',
-            style: GoogleFonts.poppins(
+            style: TextStyle(
               fontWeight: FontWeight.w600,
             ),
             children: [
               TextSpan(
                 text:
                     '${DateFormat("MMM").format(startDate)}, ${startDate.day}',
-                style: GoogleFonts.poppins(
+                style: TextStyle(
                   fontWeight: FontWeight.w400,
                 ),
               )
@@ -37,13 +37,13 @@ class CurrentFilterRange extends StatelessWidget {
         RichText(
           text: TextSpan(
             text: 'to ',
-            style: GoogleFonts.poppins(
+            style: TextStyle(
               fontWeight: FontWeight.w600,
             ),
             children: [
               TextSpan(
                 text: '${DateFormat("MMM").format(endDate)}, ${endDate.day}',
-                style: GoogleFonts.poppins(
+                style: TextStyle(
                   fontWeight: FontWeight.w400,
                 ),
               )
